@@ -800,6 +800,9 @@ img {
   /* контейнер для галочки и текста */
   margin-bottom: 30px;
 }
+.checkbox:hover .checkbox__choose {
+  border-color: var(--accent-color);
+}
 .checkbox__label {
   display: inline-block;
 
