@@ -17,7 +17,7 @@
   padding-bottom: 32px;
 
   color: $headers-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $cubic;
 
   font-weight: 500;
   font-size: 14px;
@@ -32,9 +32,7 @@
     color: $accent-color;
   }
   &--current::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    @include pos-abs($bottom: 0, $left: 0);
 
     display: inline-block;
     content: "";

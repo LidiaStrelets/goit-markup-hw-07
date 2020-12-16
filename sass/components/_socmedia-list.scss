@@ -14,7 +14,7 @@
   height: 44px;
 
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms $cubic;
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -24,7 +24,7 @@
 .socmedia__icon {
   /* иконка соцсети */
   fill: $icon-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $cubic;
   .socmedia__link:hover &,
   .socmedia__link:focus & {
     fill: $white-color;

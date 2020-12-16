@@ -1,0 +1,7 @@
+@mixin pos-abs($top, $right, $bottom, $left, $pos: absolute) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
