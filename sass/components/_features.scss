@@ -1,0 +1,36 @@
+.feature-list {
+  @include flex-container($justif: flex-start, $align: stretch);
+}
+.feature-list__item {
+  width: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.feature__title {
+  /* заголовок пункта списка */
+  color: $headers-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.feature__description {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin: 0;
+}
+.feature__icon {
+  @include flex-container;
+
+  background-color: $button-bcg-color;
+
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+}

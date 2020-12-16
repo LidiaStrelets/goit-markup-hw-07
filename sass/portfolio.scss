@@ -1,0 +1,17 @@
+@import "./utilits/variables";
+@import "./components/common";
+@import "./utilits/flexcontainer";
+@import "./components/logo";
+@import "./components/links";
+@import "./components/header";
+
+@import "./components/socmedia-list";
+@import "./components/footer";
+
+.port-header {
+  /* хедер */
+  border-bottom: 1px solid $port-header-border;
+}
+
+@import "./portfolio-components/checkboxes";
+@import "./portfolio-components/portfolio-cards";
